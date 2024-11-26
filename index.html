@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="assets/styles.css"> 
+  <title>Iniciar Estudos</title> 
+ </head> 
+ <body> 
+  <div id="inicio-estudos"> 
+   <h1 class="title-fire">ALURA ESTUDOS</h1> <button id="iniciar-btn">Iniciar Estudos</button> 
+  </div> 
+  <main style="display: none;"> 
+   <section id="container"> 
+   </section> 
+  </main> 
+  <footer> 
+   <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p> 
+  </footer> 
+  <script src="app.js"></script> 
+  <script src="parguntas.js"></script> 
+  <script>
+        document.getElementById('iniciar-btn').addEventListener('click', function() {
+            document.getElementById('inicio-estudos').styles.display = 'none';
+            document.querySelector('main').styles.display = 'block';
+        });
+    </script> 
+ </body>
+</html>
